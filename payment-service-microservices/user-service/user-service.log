@@ -1,0 +1,136 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.capgemini:user-service >---------------------
+[INFO] Building user-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.3:run (default-cli) > test-compile @ user-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ user-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ user-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ user-service ---
+[INFO] skip non existing resourceDirectory /Users/jami/java-advanced-microservices/user-service/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ user-service ---
+[INFO] Recompiling the module because of added or removed source files.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target/test-classes
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] 
+[INFO] <<< spring-boot:4.0.3:run (default-cli) < test-compile @ user-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.3:run (default-cli) @ user-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-10T15:34:48.684+05:30  INFO 62083 --- [user-service] [  restartedMain] c.c.user_service.UserServiceApplication  : Starting UserServiceApplication using Java 25.0.2 with PID 62083 (/Users/jami/java-advanced-microservices/user-service/target/classes started by jami in /Users/jami/java-advanced-microservices/user-service)
+2026-03-10T15:34:48.685+05:30  INFO 62083 --- [user-service] [  restartedMain] c.c.user_service.UserServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-10T15:34:48.703+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9999/configserver
+2026-03-10T15:34:48.703+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=user-service, profiles=[default], label=null, version=280411d6e1aba3b0847faadc6fc2ab8ecdf57592, state=
+2026-03-10T15:34:48.704+05:30  INFO 62083 --- [user-service] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-10T15:34:48.704+05:30  INFO 62083 --- [user-service] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-10T15:34:49.140+05:30  INFO 62083 --- [user-service] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-10T15:34:49.202+05:30  INFO 62083 --- [user-service] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2026-03-10T15:34:49.314+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=784b9ac8-1e49-3b74-9f53-1e08b50cebf7
+2026-03-10T15:34:49.517+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-03-10T15:34:49.522+05:30  INFO 62083 --- [user-service] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-10T15:34:49.522+05:30  INFO 62083 --- [user-service] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-10T15:34:49.539+05:30  INFO 62083 --- [user-service] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 835 ms
+2026-03-10T15:34:49.682+05:30  INFO 62083 --- [user-service] [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-10T15:34:49.709+05:30  INFO 62083 --- [user-service] [  restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-10T15:34:49.886+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-10T15:34:49.901+05:30  INFO 62083 --- [user-service] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-10T15:34:49.979+05:30  INFO 62083 --- [user-service] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17467e28
+2026-03-10T15:34:49.980+05:30  INFO 62083 --- [user-service] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-10T15:34:50.000+05:30  WARN 62083 --- [user-service] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-10T15:34:50.011+05:30  INFO 62083 --- [user-service] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.7
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-10T15:34:50.378+05:30  INFO 62083 --- [user-service] [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-10T15:34:50.436+05:30  INFO 62083 --- [user-service] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-10T15:34:50.475+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-10T15:34:50.581+05:30  WARN 62083 --- [user-service] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-10T15:34:50.616+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'PAYMENT-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-03-10T15:34:50.654+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-03-10T15:34:50.907+05:30  INFO 62083 --- [user-service] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-03-10T15:34:50.916+05:30  WARN 62083 --- [user-service] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-10T15:34:50.920+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2026-03-10T15:34:50.966+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-10T15:34:50.976+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-10T15:34:50.977+05:30  INFO 62083 --- [user-service] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-10T15:34:50.980+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-10T15:34:50.980+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-10T15:34:50.980+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-10T15:34:50.980+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-10T15:34:50.980+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-10T15:34:50.980+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-03-10T15:34:50.980+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-10T15:34:51.091+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-10T15:34:51.092+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-03-10T15:34:51.092+05:30  INFO 62083 --- [user-service] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-10T15:34:51.093+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1773137091093 with initial instances count: 3
+2026-03-10T15:34:51.094+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-SERVICE with eureka with status UP
+2026-03-10T15:34:51.095+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1773137091095, current=UP, previous=STARTING]
+2026-03-10T15:34:51.095+05:30  INFO 62083 --- [user-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/172.21.237.216:user-service:8089: registering service...
+2026-03-10T15:34:51.101+05:30  INFO 62083 --- [user-service] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-SERVICE with eureka with status DOWN
+2026-03-10T15:34:51.101+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1773137091101, current=DOWN, previous=UP]
+2026-03-10T15:34:51.102+05:30  WARN 62083 --- [user-service] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-10T15:34:51.106+05:30  INFO 62083 --- [user-service] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-10T15:34:51.107+05:30  INFO 62083 --- [user-service] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-10T15:34:51.108+05:30  INFO 62083 --- [user-service] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-10T15:34:51.109+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-03-10T15:34:51.125+05:30  INFO 62083 --- [user-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/172.21.237.216:user-service:8089 - registration status: 204
+2026-03-10T15:34:51.126+05:30  INFO 62083 --- [user-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/172.21.237.216:user-service:8089: registering service...
+2026-03-10T15:34:51.136+05:30  INFO 62083 --- [user-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/172.21.237.216:user-service:8089 - registration status: 204
+2026-03-10T15:34:51.136+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-03-10T15:34:51.139+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/172.21.237.216:user-service:8089 - deregister  status: 200
+2026-03-10T15:34:51.139+05:30  INFO 62083 --- [user-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-03-10T15:34:51.149+05:30  INFO 62083 --- [user-service] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-10T15:34:51.155+05:30 ERROR 62083 --- [user-service] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8089 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8089 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.396 s
+[INFO] Finished at: 2026-03-10T15:34:51+05:30
+[INFO] ------------------------------------------------------------------------
