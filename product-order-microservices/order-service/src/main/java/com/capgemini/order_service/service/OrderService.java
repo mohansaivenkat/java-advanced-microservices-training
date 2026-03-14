@@ -6,6 +6,9 @@ import com.capgemini.order_service.dto.OrderResponseDto;
 import com.capgemini.order_service.dto.ProductResponseDto;
 import com.capgemini.order_service.entity.Order;
 import com.capgemini.order_service.repository.OrderRepository;
+
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -35,7 +38,9 @@ public class OrderService {
         );
     }
 
-    public OrderResponseDto createOrder(OrderRequestDto request) {
+    
+    @CircuitBreaker(name="productService",fallbackMethod = "createOrderFallBack")
+    public String createOrder(OrderRequestDto request) {
         // Fetch product details from PRODUCT-SERVICE
         ProductResponseDto productResponse = productClient.getProductById(request.getProductId());
 
@@ -49,7 +54,7 @@ public class OrderService {
         }
 
         Order savedOrder = orderRepository.save(order);
-        return mapToDto(savedOrder);
+        return "Order Saved";
     }
 
     public List<OrderResponseDto> getAllOrders() {
@@ -62,4 +67,12 @@ public class OrderService {
         Optional<Order> optionalOrder = orderRepository.findById(id);
         return optionalOrder.map(this::mapToDto).orElse(null);
     }
+    
+    public String createOrderFallBack(OrderRequestDto request,Throwable ex) {
+    	return "Product Service is Down";
+    }
 }
+
+
+
+
